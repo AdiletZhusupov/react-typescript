@@ -1,5 +1,5 @@
 // import React, { useState } from 'react';
-import './App.css';
+import "./App.css";
 
 //Tutorials 1-5
 // import { Heading } from './components/Heading';
@@ -14,7 +14,14 @@ import './App.css';
 // import { Input } from './components/Input';
 // import { Container } from './components/Container';
 // import { LoggedIn } from './components/state/LoggedIn';
-import { User } from './components/state/User';
+// import { User } from "./components/state/User";
+
+//Tutorials 11-15
+// import { Counter } from "./components/state/Counter";
+// import { Box } from "./components/context/Box";
+// import {ThemeContextProvider} from "./components/context/ThemeContext"
+// import { UserContextProvider } from "./components/context/UserContext";
+// import { User } from "./components/context/User";
 
 function App() {
   /* Tutorials 1-5
@@ -34,7 +41,6 @@ function App() {
   // const [inputValue, setInputValue] = useState("")
   return (
     <div className="App">
-      
       {/*Tutorials 1-5 
       <Greet name="Adilet" isLoggedIn={true} />
       <Person name={personName}/>
@@ -49,8 +55,17 @@ function App() {
       <Button handleClick={(e,id)=>console.log(e, id)}/>
       <Input value={inputValue} handleChange={(e)=> setInputValue(e.target.value)}/> 
       <Container styles={{border: '1px solid red', padding: '1rem'}}/> 
-      <LoggedIn/>*/}
-      <User/>
+      <LoggedIn/>
+      <User/>*/}
+
+      {/* Tutorials 11-15
+      <Counter />
+      <ThemeContextProvider>
+        <Box/>
+      </ThemeContextProvider>
+      <UserContextProvider>
+        <User/>
+      </UserContextProvider>*/}
     </div>
   );
 }
