@@ -32,6 +32,12 @@ import "./App.css";
 // import { List } from "./components/generics/List";
 // import { RandomNumber } from "./components/restriction/RandomNumber";
 
+
+//Tutorials 21-25
+// import { Toast } from "./components/templateliterals/Toast";
+// import { CustomButton } from "./components/html/Button";
+import { Text } from "./components/polymorphic/Text";
+
 function App() {
   /* Tutorials 1-5
   const personName = {
@@ -85,6 +91,14 @@ function App() {
       <List items={[1, 2, 3]} onClick={(item) => console.log(item)}/>
       <List items={[{id: 1, first: 'Bruce', last: 'Wayne'},{id: 2, first: 'Clark', last: 'Kent'},{id: 3, first: 'Princess', last: 'Diana'}]} onClick={(item) => console.log(item)}/>
       <RandomNumber value={10} isPositive/>*/}
+      
+      
+      {/* Tutorials 21-25
+      <Toast position='center'/>
+      <CustomButton variant="primary" onClick={()=> console.log("clicked")}>Primary Button</CustomButton>*/}
+    <Text as='h1' size='lg'>Heading</Text>
+    <Text as='p' size='md'>Paragpraph</Text>
+    <Text as='label' htmlFor='someId' size='lg' color='secondary'>Label</Text>
     </div>
   );
 }
